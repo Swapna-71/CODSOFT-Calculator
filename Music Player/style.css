@@ -1,0 +1,146 @@
+@import url(https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Mukta:wght@200;300;400;500;600;700;800&display=swap);
+
+body{
+    background-color: #786984;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+nav{
+    font-family: Josefin Sans;
+}
+
+nav ul{
+    display: flex;
+    align-items: center ;
+    list-style-type: none;
+    height: 50px;
+    background-color: #786984;
+    color: black;
+}
+
+nav ul li{
+    padding: 0px 12px;
+    cursor: pointer;
+}
+
+
+.brand img{
+    width: 50px;
+    padding: 0 8px;
+
+}
+
+.brand{
+    display: flex;
+    align-items: center;
+    font-weight:  bolder;
+    font-size: 1rem;
+}
+
+.container{
+    min-height: 40vh;
+    background-color:  white;
+    color: black;
+    font-family: Josefin Sans;
+    display: flex;
+    margin: 23px auto;
+    width: 70%;
+    border-radius: 12px;
+    padding: 34px;
+    background-image: url(/bg.jpg);
+    
+}
+
+.bottom{
+    position: sticky;
+    height: 90px;
+    background-color: #786984;
+    color: black;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.icons{
+    margin-top: 10px;
+}
+
+.icons i{
+    cursor: pointer;
+}
+
+#myProgressBar{
+    width: 80vw;
+    cursor: pointer;
+}
+
+.songItemContainer{
+    margin-top: 25px;
+}
+
+.songItem {
+    height: 50px;
+    display: flex;
+    background-color: #786984;
+    color: black;
+    margin: 12px 0px;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 34px;
+}
+
+.songItem img {
+    width: 40px;
+    margin: 0 23px;
+    border-radius: 34px;
+}
+
+.timestamp{
+    margin: 0 50px;
+}
+
+.timestamp i{
+    cursor: pointer;
+    margin: 0 10PX;
+}
+
+.songinfo{
+    position: absolute;
+    left: 10vw;
+    font-family: Josefin Sans;
+}
+
+
+.songBanner{
+    width: 50vh;
+    margin: 10px 50px;
+}
+.songBanner h1{
+    margin: 10px 60px;
+}
+#currentSongCover{
+    width: 435px;
+    height: 340px;
+    margin: 0px 50px;
+    padding: 10px 10px;
+    
+
+}
+#currentSongName {
+    margin: 10px 60px;
+    
+}
+
+
+
+@media only screen and (max-width: 1100px){
+    body{
+        background-color: red;
+    }
+}
