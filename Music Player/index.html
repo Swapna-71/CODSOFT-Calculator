@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Player</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <li class="brand"><img src="Logo.webp" alt="Music Player"> Music Player</li>
+            <li>Home</li>
+            <li>About</li>
+            <li>Library</li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <div class="songList">
+            <h1>Your Mix</h1>
+            <div class="songItemContainer">
+                <div class="songItem" >
+                    <img alt="1">
+                    <span class="songName">Lover</span>
+                    <span class="songlistplay"><span class="timestamp">3:41<i id="0" class="fa-solid songItemPlay fa-play-circle"></i></span></span>
+                </div>
+                <div class="songItem">
+                    <img alt="1">
+                    <span class="songName">Espresso</span>
+                    <span class="songlistplay"><span class="timestamp">2:55<i id="1" class="fa-solid songItemPlay fa-play-circle"></i></span></span>
+                </div>
+                <div class="songItem">
+                    <img alt="1">
+                    <span class="songName">We can't be friends</span>
+                    <span class="songlistplay"><span class="timestamp">3:48<i id="2" class="fa-solid songItemPlay fa-play-circle"></i></span></span>
+                </div>
+                <div class="songItem">
+                    <img alt="1">
+                    <span class="songName">Die For You</span>
+                    <span class="songlistplay"><span class="timestamp">3:53<i id="3" class="fa-solid songItemPlay fa-play-circle"></i></span></span>
+                </div>
+                <div class="songItem">
+                    <img alt="1">
+                    <span class="songName">Stupid In Love</span>
+                    <span class="songlistplay"><span class="timestamp">2:53<i id="4" class="fa-solid songItemPlay fa-play-circle"></i></span></span>
+                </div>
+                <div class="songItem">
+                    <img alt="1">
+                    <span class="songName">Dynamite</span>
+                    <span class="songlistplay"><span class="timestamp">3:19<i id="5" class="fa-solid songItemPlay fa-play-circle"></i></span></span>
+                </div>
+            </div>
+        </div>
+        <div class="songBanner">
+            <h1>Now Playing</h1>
+            <div id="currentSong">
+                <img id="currentSongCover" src="/cover pages/1.jpeg" alt="Current Song Cover">
+                <span id="currentSongName">Lover</span>
+            </div>
+        </div>
+        </div>
+    </div>
+
+    <div class="bottom">
+        <input type="range" name="range" id="myProgressBar" min="0" max="100">
+        <div class="icons">
+            <i id="previous" class="fa-solid fa-2x fa-step-backward"></i>
+            <i id="masterPlay" class="fa-solid fa-2x fa-circle-play"></i>
+            <i id="next" class="fa-solid fa-2x fa-step-forward"></i>
+        </div>
+        <div class="songinfo">
+            <span id="masterSongName">Lover</span>
+        </div>
+        
+    </div>
+
+    <script src="https://kit.fontawesome.com/369a3ab23a.js" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
