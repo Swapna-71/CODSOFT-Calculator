@@ -103,16 +103,4 @@ function showWeatherData (data){
 
     weatherForecastEl.innerHTML = otherDayForcast;
 }
-function setWeatherBackground(weather) {
-    const weatherBackgrounds = {
-        Clear: 'url(/images/clear.jpg)',
-        Clouds: 'url(/images/cloudy.jpg)',
-        Rain: 'url(/images/rainy.jpg)',
-        Snow: 'url(/images/snow.jpg)',
-        Thunderstorm: 'url(/images/thunderstorm.jpg)',
-        Drizzle: 'url(/images/drizzle.jpg)',
-        Mist: 'url(/images/mist.jpeg)',
-    };
 
-    document.body.style.backgroundImage = weatherBackgrounds[weather] || 'url(/images/default.jpg)';
-}
